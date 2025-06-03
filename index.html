@@ -13,22 +13,47 @@
       line-height: 1.9;
     }
 
+    /* Header section with background image */
+    .hero {
+      background-image: url('header-books.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+    }
+
+    .logo-wrapper {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .logo-wrapper img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
     header {
-      background-color: #002b45;
-      color: white;
-      padding: 70px 20px 50px;
       text-align: center;
+      padding: 60px 20px 30px;
+      background-color: white;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 38px;
-      letter-spacing: 1px;
+      margin: 10px 0 0;
+      font-size: 36px;
+      color: #002b45;
     }
 
     header p {
-      font-size: 17px;
-      margin: 12px 0;
+      font-size: 16px;
+      margin: 5px 0;
     }
 
     section {
@@ -76,6 +101,12 @@
   </style>
 </head>
 <body>
+
+  <div class="hero">
+    <div class="logo-wrapper">
+      <img src="logo.png" alt="DOA HELLAS Logo">
+    </div>
+  </div>
 
   <header>
     <h1>DOA HELLAS</h1>
